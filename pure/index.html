@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pure JS SVG</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .svg-wrapper {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        .button-wrapper {
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+          padding-bottom: 30px;
+        }
+
+        button {
+          width: 100px;
+          height: 100px;
+          border-radius: 50px;
+          background: #EA2B1F;
+          color: #fff;
+          font-size: 1.3em;
+          border: 7px solid #B8BDB5;
+          cursor: pointer;
+          transition: .1s all ease-out;
+          -webkit-tap-highlight-color: rgba(0,0,0,0);
+        }
+
+        button:active, button:focus {
+          outline: none;
+        }
+        
+        button:active {
+          transform: scale(.9);
+        }
+    </style>
+</head>
+<body>
+
+     
+    <div class="button-wrapper">
+        <button id="button">Press me</button>
+    </div>
+    <script src="js/animator.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
