@@ -47,11 +47,3 @@ function createSVG(source, wrapper) {
     wrapper.appendChild(el);
     return el.childNodes[0];
 }
-
-function draw(timestamp) {
-    requestAnimationFrame(draw);
-    animator.update(targetSVGGroups.slice(0,4), 'skew');
-    animator.update(targetSVGGroups.slice(4,8), 'rotate');
-    animator.update(targetSVGGroups.slice(8,12), 'translate');
-    animator.update(targetSVGGroups.slice(12,16), 'scale');
-}
